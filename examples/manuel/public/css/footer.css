@@ -1,0 +1,83 @@
+/* footer.css */
+
+/* Pie de página */
+body > footer {
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-2xl) var(--space-xl) var(--space-lg) var(--space-xl);
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr;
+  gap: var(--space-2xl);
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Encabezados del pie */
+footer h2 {
+  font-size: var(--font-size-md);
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+/* Bloque 1: Información personal */
+footer > section:first-of-type p:first-of-type {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-main);
+  margin-bottom: var(--space-2xs);
+}
+
+footer > section:first-of-type p:last-of-type {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-subtle);
+}
+
+/* Bloque 2: Información de contacto */
+footer address {
+  font-style: normal;
+  font-size: var(--font-size-sm);
+}
+
+footer address p {
+  margin-bottom: var(--space-2xs);
+}
+
+/* Bloque 3: Navegación y enlaces del pie */
+footer nav ul li {
+  margin-bottom: var(--space-xs);
+}
+
+footer nav a {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+
+/* Bloque 4: Barra inferior de derechos (Copyright) */
+footer > p:last-of-type {
+  grid-column: 1 / -1;
+  border-top: 1px solid var(--color-border-light);
+  padding-top: var(--space-lg);
+  margin-top: var(--space-lg);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-subtle);
+  margin-bottom: 0;
+}
+
+/* Adaptación para tabletas y móviles */
+@media (max-width: 900px) {
+  body > footer {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  footer > p:last-of-type {
+    text-align: center;
+  }
+}

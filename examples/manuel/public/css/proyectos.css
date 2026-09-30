@@ -1,0 +1,130 @@
+/* Estilos de la pagina de proyectos */
+
+/* Contenedor vertical de proyectos */
+main>section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+/* Tarjetas individuales de proyectos */
+main>section>article {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  box-shadow: var(--shadow-sm);
+}
+
+main>section>article>header {
+  border-bottom: 1px solid var(--color-border-light);
+  padding-bottom: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+main>section>article>header p {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0;
+}
+
+/* Grilla de submodulos */
+main>section>article>section>section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+  margin: var(--space-lg) 0;
+}
+
+main>section>article>section>section>article {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+}
+
+main>section>article>section>section>article h3 {
+  font-size: var(--font-size-md);
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+}
+
+main>section>article>section>section>article p {
+  font-size: var(--font-size-sm);
+  margin-bottom: 0;
+}
+
+/* Pildoras de tecnologias */
+main>section>article>section>ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-md);
+}
+
+main>section>article>section>ul li {
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  padding: var(--space-2xs) var(--space-sm);
+  border-radius: var(--radius-full);
+  background-color: var(--color-surface-raised);
+  color: var(--color-text-main);
+  border: 1px solid var(--color-border);
+}
+
+/* Enlaces externos y repositorios */
+main>section>article>section>footer {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border-light);
+}
+
+main>section>article>section>footer ul {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  margin-top: var(--space-xs);
+}
+
+main>section>article>section>footer a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm) var(--space-lg);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+main>section>article>section>footer li:first-of-type a {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+main>section>article>section>footer li:first-of-type a:hover {
+  background-color: var(--color-primary-hover);
+  color: var(--color-text-inverse);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+}
+
+main>section>article>section>footer li:last-of-type a {
+  background-color: var(--color-secondary);
+  color: var(--color-text-inverse);
+}
+
+main>section>article>section>footer li:last-of-type a:hover {
+  background-color: var(--color-secondary-hover);
+  color: var(--color-text-inverse);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+}

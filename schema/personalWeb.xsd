@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:documentation>PersonalWebML 1.0. Orden explícito, cinco páginas, secciones y artículos repetibles. Sin HTML arbitrario ni recursos multimedia. Las imágenes son nombres de archivo locales.</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="textType">
+    <xs:restriction base="xs:token">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="10000"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="emailType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[^\s@]+@[^\s@]+\.[^\s@]+"/>
+      <xs:maxLength value="254"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="urlType">
+    <xs:restriction base="xs:anyURI">
+      <xs:pattern value="https?://[^\s]+"/>
+      <xs:maxLength value="2048"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="imageNameType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Za-z0-9][A-Za-z0-9._\-]*\.(png|jpg|jpeg|gif|webp|svg|avif)"/>
+      <xs:maxLength value="200"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="yearType">
+    <xs:restriction base="xs:gYear">
+      <xs:pattern value="[0-9]{4}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="imageType">
+    <xs:sequence>
+      <xs:element name="filename" type="imageNameType"/>
+      <xs:element name="alt" type="textType"/>
+      <xs:element name="caption" type="textType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="linkType">
+    <xs:sequence>
+      <xs:element name="label" type="textType"/>
+      <xs:element name="url" type="urlType"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="itemType">
+    <xs:sequence>
+      <xs:element name="title" type="textType"/>
+      <xs:element name="subtitle" type="textType" minOccurs="0"/>
+      <xs:element name="image" type="imageType" minOccurs="0"/>
+      <xs:element name="paragraph" type="textType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="bullet" type="textType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="link" type="linkType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="section" type="sectionType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sectionType">
+    <xs:sequence>
+      <xs:element name="title" type="textType"/>
+      <xs:element name="description" type="textType" minOccurs="0"/>
+      <xs:element name="identity" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="item" type="itemType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="section" type="sectionType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pageType">
+    <xs:sequence>
+      <xs:element name="title" type="textType"/>
+      <xs:element name="label" type="textType" minOccurs="0"/>
+      <xs:element name="description" type="textType" minOccurs="0"/>
+      <xs:element name="section" type="sectionType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="personalWeb">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="site">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="title" type="textType"/>
+              <xs:element name="description" type="textType"/>
+              <xs:element name="language" type="xs:language"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="person">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" type="textType"/>
+              <xs:element name="headline" type="textType" minOccurs="0"/>
+              <xs:element name="biography" type="textType" minOccurs="0"/>
+              <xs:element name="location" type="textType" minOccurs="0"/>
+              <xs:element name="birthYear" type="yearType" minOccurs="0"/>
+              <xs:element name="image" type="imageType" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="contact" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="email" type="emailType" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="link" type="linkType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="pages">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="home" type="pageType"/>
+              <xs:element name="profile" type="pageType"/>
+              <xs:element name="projects" type="pageType"/>
+              <xs:element name="interests" type="pageType"/>
+              <xs:element name="leisure" type="pageType"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="footer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="description" type="textType"/>
+              <xs:element name="year" type="yearType"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

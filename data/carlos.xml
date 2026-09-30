@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personalWeb xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../schema/personalWeb.xsd">
+  <site>
+    <title>Aprendiendo desarrollo web</title>
+    <description>Una web personal sencilla para compartir formación, proyectos y aficiones.</description>
+    <language>es</language>
+  </site>
+  <person>
+    <name>Carlos Martín</name>
+    <headline>Estudiante de desarrollo de aplicaciones web</headline>
+    <biography>Estoy aprendiendo a construir páginas accesibles y fáciles de utilizar. Comparto mis pequeños proyectos mientras continúo formándome.</biography>
+    <location>Gijón, Asturias, España</location>
+  </person>
+  <contact>
+    <email>carlos@example.com</email>
+  </contact>
+  <pages>
+    <home>
+      <title>Inicio</title>
+      <description>Mi espacio para aprender, crear y compartir.</description>
+    </home>
+    <profile>
+      <title>Perfil</title>
+      <description>Mis primeros pasos en el desarrollo web.</description>
+      <section>
+        <title>Formación</title>
+        <item>
+          <title>Desarrollo de Aplicaciones Web</title>
+          <subtitle>Ciclo formativo · 2025–2027</subtitle>
+          <paragraph>Aprendo programación, bases de datos y desarrollo de interfaces.</paragraph>
+          <bullet>HTML y CSS</bullet>
+          <bullet>JavaScript y SQL</bullet>
+        </item>
+      </section>
+      <section>
+        <title>Experiencia</title>
+        <item>
+          <title>Colaboración con una asociación local</title>
+          <paragraph>Ayudo a actualizar la información de sus actividades y a organizar los contenidos de su página web.</paragraph>
+        </item>
+      </section>
+      <section>
+        <title>Contacto</title>
+        <identity>true</identity>
+      </section>
+    </profile>
+    <projects>
+      <title>Proyectos</title>
+      <description>Pequeños trabajos con los que practico lo aprendido.</description>
+      <section>
+        <title>Trabajos recientes</title>
+        <item>
+          <title>Organizador de tareas</title>
+          <subtitle>Proyecto de clase</subtitle>
+          <paragraph>Una aplicación para añadir tareas, marcarlas como completadas y guardarlas en el navegador.</paragraph>
+          <bullet>JavaScript</bullet>
+          <bullet>Almacenamiento local</bullet>
+          <link>
+            <label>Descripción del proyecto</label>
+            <url>https://example.com/carlos/tareas</url>
+          </link>
+        </item>
+        <item>
+          <title>Catálogo de libros</title>
+          <paragraph>Una página adaptable con mis lecturas favoritas, organizadas por género.</paragraph>
+        </item>
+      </section>
+    </projects>
+    <interests>
+      <title>Intereses</title>
+      <description>Tecnologías y prácticas que quiero conocer mejor.</description>
+      <section>
+        <title>Aprendizaje</title>
+        <item>
+          <title>Desarrollo web accesible</title>
+          <paragraph>Me interesa escribir HTML con una estructura clara y crear interfaces que se puedan utilizar también con el teclado.</paragraph>
+        </item>
+      </section>
+    </interests>
+    <leisure>
+      <title>Ocio</title>
+      <description>Mis aficiones fuera de los estudios.</description>
+      <section>
+        <title>Tiempo libre</title>
+        <item>
+          <title>Lectura</title>
+          <paragraph>Disfruto con las novelas de aventuras y la divulgación científica.</paragraph>
+        </item>
+        <item>
+          <title>Ciclismo</title>
+          <subtitle>Rutas tranquilas</subtitle>
+          <paragraph>Me gusta salir en bicicleta por la ciudad y recorrer caminos cercanos con amigos.</paragraph>
+        </item>
+      </section>
+    </leisure>
+  </pages>
+  <footer>
+    <description>Sitio personal de aprendizaje. Perfil ficticio de ejemplo, sin imágenes.</description>
+    <year>2026</year>
+  </footer>
+</personalWeb>

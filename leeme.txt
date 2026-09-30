@@ -1,0 +1,12 @@
+PersonalWebML - Generador de sitios web personales
+Tecnologías:
+* HTML y CSS: interfaz del generador y plantillas de las cinco páginas.
+* XML y XML Schema: datos del sitio y reglas de estructura y contenido.
+* TypeScript: valida el XML y prepara datos y bloques HTML repetibles.
+* C++ compilado a WebAssembly: sustituye los marcadores de las plantillas.
+* JavaScript: coordina la interfaz, los recursos y las llamadas a WebAssembly.
+* JSZip: empaqueta los HTML, CSS, JS, favicon e img/ vacía en un ZIP descargable.
+
+Ejemplos: Manuel (complejo), Ana (medio) y Carlos (sencillo).
+
+Uso: servidor estático

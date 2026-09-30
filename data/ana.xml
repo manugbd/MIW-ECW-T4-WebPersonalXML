@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personalWeb xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../schema/personalWeb.xsd">
+  <site>
+    <title>Diseño y experiencias digitales</title>
+    <description>Portfolio de diseño de producto, accesibilidad y desarrollo web.</description>
+    <language>es</language>
+  </site>
+  <person>
+    <name>Ana López</name>
+    <headline>Diseñadora de producto digital y estudiante de Ingeniería Web</headline>
+    <biography>Diseño interfaces claras y accesibles. Combino investigación con usuarios, prototipado y desarrollo de pequeñas aplicaciones para convertir necesidades reales en soluciones útiles.</biography>
+    <location>Oviedo, Asturias, España</location>
+    <birthYear>1998</birthYear>
+    <image>
+      <filename>foto-perfil.png</filename>
+      <alt>Retrato personal de Ana López</alt>
+      <caption>Diseño, tecnología y aprendizaje continuo.</caption>
+    </image>
+  </person>
+  <contact>
+    <email>ana@example.com</email>
+    <link>
+      <label>Portfolio de diseño</label>
+      <url>https://example.com/ana</url>
+    </link>
+  </contact>
+  <pages>
+    <home>
+      <title>Inicio</title>
+      <label>Inicio</label>
+      <description>Conoce mi trayectoria, mis proyectos y las ideas que me inspiran.</description>
+    </home>
+    <profile>
+      <title>Perfil y trayectoria</title>
+      <label>Mi perfil</label>
+      <description>Formación en diseño y tecnología, con experiencia en productos digitales.</description>
+      <section>
+        <title>Formación académica</title>
+        <item>
+          <title>Máster Universitario en Ingeniería Web</title>
+          <subtitle>Universidad de Oviedo · 2026–2027</subtitle>
+          <image>
+            <filename>logo-uniovi.png</filename>
+            <alt>Logotipo de la Universidad de Oviedo</alt>
+          </image>
+          <paragraph>Actualmente amplío mis conocimientos de desarrollo web para participar en todas las fases de creación de un producto.</paragraph>
+          <bullet>Estándares web y accesibilidad</bullet>
+          <bullet>Diseño y desarrollo de aplicaciones</bullet>
+        </item>
+        <item>
+          <title>Formación en diseño de producto digital</title>
+          <subtitle>Programa de especialización · 2020–2021</subtitle>
+          <paragraph>Investigación con usuarios, diseño de interfaces, prototipado y evaluación de la usabilidad.</paragraph>
+        </item>
+      </section>
+      <section>
+        <title>Experiencia profesional</title>
+        <item>
+          <title>Diseñadora independiente</title>
+          <subtitle>Proyectos para pequeños negocios · 2023–actualidad</subtitle>
+          <paragraph>Diseño sitios web y experiencias de compra adaptadas a las necesidades de cada negocio.</paragraph>
+          <bullet>Entrevistas con clientes y definición de requisitos</bullet>
+          <bullet>Prototipos interactivos y sistemas de diseño</bullet>
+          <bullet>Revisión de accesibilidad y adaptación a móviles</bullet>
+        </item>
+        <item>
+          <title>Colaboración con un estudio creativo</title>
+          <paragraph>Participé en el rediseño de páginas corporativas y en la preparación de componentes reutilizables para el equipo de desarrollo.</paragraph>
+        </item>
+      </section>
+      <section>
+        <title>Currículum resumido</title>
+        <description>Datos personales y contacto reutilizados desde la ficha principal.</description>
+        <identity>true</identity>
+      </section>
+    </profile>
+    <projects>
+      <title>Proyectos de diseño</title>
+      <label>Proyectos</label>
+      <description>Una selección de trabajos centrados en facilitar tareas cotidianas.</description>
+      <section>
+        <title>Portfolio</title>
+        <item>
+          <title>Rediseño de una biblioteca digital</title>
+          <subtitle>Proyecto académico de experiencia de usuario</subtitle>
+          <paragraph>Propuesta para simplificar la búsqueda de libros y el seguimiento de préstamos desde el móvil.</paragraph>
+          <paragraph>El diseño prioriza la legibilidad, la navegación por teclado y mensajes comprensibles.</paragraph>
+          <bullet>Investigación con usuarios</bullet>
+          <bullet>Prototipado de interfaces</bullet>
+          <bullet>Evaluación de accesibilidad</bullet>
+          <link>
+            <label>Ver la propuesta</label>
+            <url>https://example.com/ana/biblioteca</url>
+          </link>
+          <section>
+            <title>Partes del proyecto</title>
+            <item>
+              <title>Catálogo y búsqueda</title>
+              <paragraph>Filtros por tema, autor y disponibilidad para localizar lecturas con rapidez.</paragraph>
+            </item>
+            <item>
+              <title>Área personal</title>
+              <paragraph>Consulta de préstamos activos, fechas de devolución y reservas pendientes.</paragraph>
+            </item>
+          </section>
+        </item>
+        <item>
+          <title>Agenda para un taller de cerámica</title>
+          <paragraph>Una página sencilla para consultar horarios, conocer las actividades y solicitar información.</paragraph>
+          <bullet>HTML semántico</bullet>
+          <bullet>CSS adaptable</bullet>
+          <bullet>JavaScript</bullet>
+        </item>
+      </section>
+    </projects>
+    <interests>
+      <title>Intereses profesionales</title>
+      <label>Intereses</label>
+      <description>Áreas en las que quiero seguir aprendiendo y creciendo.</description>
+      <section>
+        <title>Diseño y tecnología</title>
+        <item>
+          <title>Accesibilidad digital</title>
+          <subtitle>Interfaces para más personas</subtitle>
+          <paragraph>Me interesa diseñar productos que se puedan usar con distintas capacidades, dispositivos y formas de interacción.</paragraph>
+        </item>
+        <item>
+          <title>Sistemas de diseño</title>
+          <paragraph>Disfruto creando componentes y criterios visuales compartidos que mantengan la coherencia de una aplicación.</paragraph>
+          <bullet>Tipografía y color</bullet>
+          <bullet>Patrones de interacción</bullet>
+        </item>
+      </section>
+    </interests>
+    <leisure>
+      <title>Ocio y tiempo libre</title>
+      <label>Ocio</label>
+      <description>Actividades que me ayudan a desconectar y encontrar inspiración.</description>
+      <section>
+        <title>Aficiones</title>
+        <item>
+          <title>Fotografía urbana</title>
+          <paragraph>Me gusta recorrer la ciudad y fotografiar detalles de su arquitectura, sus colores y la vida cotidiana.</paragraph>
+        </item>
+        <item>
+          <title>Naturaleza y rutas</title>
+          <subtitle>Escapadas por Asturias</subtitle>
+          <paragraph>Los fines de semana suelo hacer rutas cortas y descubrir pueblos y paisajes de la costa.</paragraph>
+          <bullet>Senderismo</bullet>
+          <bullet>Paseos junto al mar</bullet>
+        </item>
+      </section>
+    </leisure>
+  </pages>
+  <footer>
+    <description>Portfolio personal de diseño, tecnología y creatividad. Perfil ficticio de ejemplo.</description>
+    <year>2026</year>
+  </footer>
+</personalWeb>

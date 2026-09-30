@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<personalWeb xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schema/personalWeb.xsd">
+  <site>
+    <title>Web personal</title>
+    <description>Página web personal y académica de Manuel García Baldó. Graduado en Ingeniería
+      Informática del Software y estudiante del Máster en Ingeniería Web en la Universidad de
+      Oviedo.</description>
+    <language>es</language>
+  </site>
+  <person>
+    <name>Manuel García Baldó</name>
+    <headline>Graduado en Ingeniería Informática del Software | Estudiante del Máster Universitario
+      en Ingeniería Web</headline>
+    <biography>Soy graduado en Ingeniería Informática del Software por la Universidad de Oviedo y
+      estudiante del Máster Universitario en Ingeniería Web en la misma institución. Me defino como
+      un profesional proactivo, con un sólido compromiso con el software que creo y de los sistemas
+      en los que intervengo.</biography>
+    <location>Gijón, Asturias, España</location>
+    <birthYear>2004</birthYear>
+    <image>
+      <filename>foto-personal-perfil.jpeg</filename>
+      <alt>Retrato personal</alt>
+      <caption>Fotografía personal</caption>
+    </image>
+  </person>
+  <contact>
+    <email>garciabaldo04@gmail.com</email>
+    <email>uo295497@uniovi.es</email>
+    <link>
+      <label>GitHub</label>
+      <url>https://github.com/manugbd</url>
+    </link>
+  </contact>
+  <pages>
+    <home>
+      <title>Inicio</title>
+      <label>Inicio</label><description>Graduado en Ingeniería Informática del Software | Estudiante del Máster
+        Universitario en Ingeniería Web</description>
+    </home>
+    <profile>
+      <title>Mi perfil profesional y Currículum Vitae</title>
+      <label>Mi perfil</label><description>Información académica, trayectoria profesional y competencias técnicas en el
+        ámbito del software y la ingeniería web.</description>
+      <section>
+        <title>Formación Académica</title>
+        <item>
+          <title>Máster Universitario en Ingeniería Web</title>
+          <subtitle>Universidad de Oviedo | Promoción 2026/2027</subtitle>
+          <image>
+            <filename>logo-uniovi.png</filename>
+            <alt>Logotipo oficial de la Universidad de Oviedo</alt>
+          </image>
+          <paragraph>Estudios en curso.</paragraph>
+        </item>
+        <item>
+          <title>Grado en Ingeniería Informática del Software</title>
+          <subtitle>Universidad de Oviedo — Escuela de Ingeniería Informática (EII) | Promoción
+            2022-2026</subtitle>
+          <image>
+            <filename>logo-eii.png</filename>
+            <alt>Logotipo de la Escuela de Ingeniería Informática de la Universidad de Oviedo</alt>
+          </image>
+          <paragraph>Formación integral en Ingeniería Informática del Software. Trabajo de Fin de
+            Grado (TFG): Aplicación Android de Carburo. Evaluación: 10 + propuesta para matrícula.</paragraph>
+        </item>
+        <item>
+          <title>Bachillerato Tecnológico</title>
+          <subtitle>C.E.S. San Eutiquio La Salle | Promoción 2020-2022</subtitle>
+          <image>
+            <filename>logo-salle.png</filename>
+            <alt>Logotipo de la Escuela de Ingeniería Informática de la Universidad de Oviedo</alt>
+          </image>
+        </item>
+      </section>
+      <section>
+        <title>Experiencia Profesional</title>
+        <item>
+          <title>ASAC Comunicaciones</title>
+          <subtitle>Inicio: Septiembre de 2026 - Actualidad | Ubicación: Parque Tecnológico de
+            Asturias, Llanera</subtitle>
+          <image>
+            <filename>logo-asac.png</filename>
+            <alt>Logotipo corporativo de ASAC Comunicaciones</alt>
+          </image>
+          <paragraph>Área de desarrollo del producto interno de la empresa. Labores de desarrollo de
+            software para la gestión de multiples sistemas e infraestructuras.</paragraph>
+        </item>
+        <item>
+          <title>ASAC Comunicaciones</title>
+          <subtitle>Inicio: Febrero de 2026 | Ubicación: Parque Tecnológico de Asturias, Llanera</subtitle>
+          <image>
+            <filename>logo-asac.png</filename>
+            <alt>Logotipo corporativo de ASAC Comunicaciones</alt>
+          </image>
+          <paragraph>Prácticas de empresa. Departamento del producto interno de la empresa.
+            Desarrollo de software, sistemas e infraestructuras tecnológicas corporativas.</paragraph>
+        </item>
+        <item>
+          <title>Bar Camping Llamas</title>
+          <subtitle>Fecha: Agosto de 2026 | Ubicación: Llamas de la Ribera, León</subtitle>
+          <image>
+            <filename>escudo-llamas-de-la-ribera.png</filename>
+            <alt>Escudo de Llamas de la Ribera</alt>
+          </image>
+          <paragraph>Hostelería. Atención al público.</paragraph>
+        </item>
+        <item>
+          <title>Mesón Las Médulas</title>
+          <subtitle>Fecha: Agosto de 2023 | Ubicación: Las Omañas, León</subtitle>
+          <image>
+            <filename>escudo-las-omanas.png</filename>
+            <alt>Escudo del Ayuntamiento de Las Omañas</alt>
+          </image>
+          <paragraph>Hostelería. Atención al público.</paragraph>
+        </item>
+        <item>
+          <title>Instalaciones Eléctricas de Baja Tensión</title>
+          <subtitle>Área técnica: Montaje, mantenimiento y diagnosis de sistemas eléctricos</subtitle>
+          <paragraph>Amplia experiencia práctica en instalación y mantenimiento de redes e
+            instalaciones eléctricas de baja tensión.</paragraph>
+        </item>
+      </section>
+      <section>
+        <title>Currículum Vitae (Versión Integrada)</title>
+        <description>Resumen de mi currículum vitae en HTML semántico.</description>
+        <identity>true</identity>
+      </section>
+    </profile>
+    <projects>
+      <title>Proyectos y Portfolio</title>
+      <label>Proyectos</label><description>Selección de proyectos de desarrollo de software y despliegue de
+        infraestructuras.</description>
+      <section>
+        <title>Proyectos destacados</title>
+        <item>
+          <title>Carburo — Gestión Inteligente de Combustible</title>
+          <subtitle>Trabajo de Fin de Grado (TFG) &amp; Ecosistema Móvil y Web</subtitle>
+          <paragraph>Carburo es una plataforma integral orientada a optimizar el gasto de
+            combustible de los usuarios, proporcionando información en tiempo real sobre estaciones
+            de servicio, fluctuación de precios y registro detallado de consumos y repostajes.</paragraph>
+          <paragraph>El ecosistema se apoya sobre una arquitectura modular basada en servicios REST
+            desacoplados:</paragraph>
+          <bullet>Android SDK</bullet>
+          <bullet>Java</bullet>
+          <bullet>Spring Boot</bullet>
+          <bullet>PostgreSQL</bullet>
+          <bullet>REST API</bullet>
+          <bullet>Docker</bullet>
+          <bullet>Git / GitHub</bullet>
+          <link>
+            <label>Visitar sitio web oficial (carburo.app) →</label>
+            <url>https://carburo.app</url>
+          </link>
+          <link>
+            <label>Repositorio en GitHub (github.com/manugbd) →</label>
+            <url>https://github.com/manugbd</url>
+          </link>
+          <section>
+            <title>Componentes del ecosistema Carburo</title>
+            <item>
+              <title>Aplicación Móvil Nativa (TFG Principal)</title>
+              <paragraph>Constituye el núcleo del Trabajo de Fin de Grado en Ingeniería Informática
+                del Software. Desarrollada de forma nativa para la plataforma Android, implementa
+                geolocalización, filtrado por tipo de carburante, comparativa visual de precios y
+                registro analítico de eficiencia de combustible de los vehículos registrados.</paragraph>
+            </item>
+            <item>
+              <title>Plataforma Web y Servicios Complementarios</title>
+              <paragraph>Desarrollo complementario que expande el ecosistema hacia la web,
+                permitiendo a los usuarios consultar resúmenes estadísticos, mapas interactivos de
+                gasolineras y gestionar perfiles desde cualquier navegador.</paragraph>
+            </item>
+          </section>
+        </item>
+        <item>
+          <title>Infraestructura Web Segura y Automatizada</title>
+          <subtitle>Proyecto de Máster Universitario en Ingeniería Web</subtitle>
+          <paragraph>Desarrollo de un entorno integral de infraestructura como código (IaC) para el
+            despliegue orquestado y seguro de aplicaciones web en entornos virtualizados y cloud. El
+            sistema implementa aprovisionamiento automatizado, configuración de redes aisladas,
+            cortafuegos perimetrales, contenedores y gestión de certificados criptográficos HTTPS.</paragraph>
+          <bullet>OpenStack</bullet>
+          <bullet>Terraform</bullet>
+          <bullet>Ansible</bullet>
+          <bullet>Linux (Debian/Ubuntu)</bullet>
+          <bullet>Docker &amp; Compose</bullet>
+          <bullet>Seguridad &amp; HTTPS</bullet>
+        </item>
+        <item>
+          <title>Sitio Web Personal y Académico (ECW)</title>
+          <subtitle>Estándares y Computación Web</subtitle>
+          <paragraph>El presente sitio web, concebido bajo los más rigurosos principios de la
+            asignatura Estándares y Computación Web. Desarrollado mediante el generador estático
+            Eleventy y plantillas Nunjucks, garantiza una separación estricta de responsabilidades,
+            HTML5 semántico puro sin utilización de elementos div genéricos, CSS externo con gestión
+            de cascada y total validación según las pautas del consorcio W3C.</paragraph>
+          <bullet>HTML5 Semántico</bullet>
+          <bullet>CSS3 / Cascada</bullet>
+          <bullet>Eleventy (11ty)</bullet>
+          <bullet>Nunjucks</bullet>
+          <bullet>Accesibilidad WCAG</bullet>
+          <bullet>Validación W3C</bullet>
+        </item>
+      </section>
+    </projects>
+    <interests>
+      <title>Tecnología y estudios</title>
+      <label>Intereses</label><description>Áreas de la informática y la tecnología que despiertan especialmente mi interés
+        durante mi formación y desarrollo profesional.</description>
+      <section>
+        <title>Áreas de interés</title>
+        <item>
+          <title>Desarrollo de software</title>
+          <subtitle>Programación y arquitectura</subtitle>
+          <paragraph>Mi principal área de interés dentro de la informática es el desarrollo de
+            software, especialmente la creación de aplicaciones robustas, mantenibles y fáciles de
+            evolucionar.</paragraph>
+          <paragraph>Me interesan especialmente Java y Spring Boot, el diseño de APIs, la
+            arquitectura de aplicaciones y la aplicación de buenas prácticas de desarrollo como
+            Clean Architecture, principios SOLID y diseño orientado al dominio.</paragraph>
+        </item>
+        <item>
+          <title>Sistemas e infraestructura</title>
+          <subtitle>Servidores y operaciones</subtitle>
+          <paragraph>También tengo especial interés por las tecnologías que permiten ejecutar y
+            mantener las aplicaciones una vez desarrolladas. Disfruto trabajando con sistemas Linux,
+            servidores, redes y herramientas de administración.</paragraph>
+          <paragraph>La utilización de Docker, máquinas virtuales, automatización mediante scripts y
+            configuración de servicios me resulta especialmente interesante por la relación directa
+            entre software e infraestructura.</paragraph>
+        </item>
+        <item>
+          <title>Redes y comunicaciones</title>
+          <subtitle>Conectividad y servicios</subtitle>
+          <paragraph>Las redes constituyen otra de las áreas que más me interesa, especialmente la
+            forma en que diferentes sistemas y servicios se comunican entre sí.</paragraph>
+          <paragraph>Me interesa comprender el funcionamiento de protocolos, servicios de red,
+            direccionamiento, seguridad, cortafuegos y las diferentes capas que permiten desplegar
+            aplicaciones accesibles de forma fiable.</paragraph>
+        </item>
+        <item>
+          <title>Seguridad informática</title>
+          <subtitle>Protección de sistemas</subtitle>
+          <paragraph>La seguridad informática es un área transversal que considero especialmente
+            importante en el desarrollo y despliegue de cualquier sistema.</paragraph>
+          <paragraph>Me interesa especialmente la protección de servicios web, la configuración
+            segura de servidores, el uso de HTTPS, la gestión de certificados y las medidas
+            destinadas a reducir la superficie de ataque de una infraestructura.</paragraph>
+        </item>
+      </section>
+    </interests>
+    <leisure>
+      <title>Ocio y tiempo libre</title>
+      <label>Ocio</label><description>Aficiones y actividades que forman parte de mi tiempo libre y me permiten
+        desconectar de la actividad académica y profesional.</description>
+      <section>
+        <title>Aficiones</title>
+        <item>
+          <title>Videojuegos</title>
+          <subtitle>Ocio digital</subtitle>
+          <paragraph>Los videojuegos son una de mis principales formas de ocio. Me atraen
+            especialmente los títulos de estrategia, simulación, rol y gestión de recursos, donde la
+            toma de decisiones y la planificación tienen un papel importante.</paragraph>
+        </item>
+        <item>
+          <title>Información y actualidad</title>
+          <subtitle>Actualidad y entretenimiento</subtitle>
+          <paragraph>También me interesa mantenerme informado sobre la actualidad y conocer los
+            acontecimientos más relevantes del día. Los contenidos de audio y los podcasts son una
+            forma cómoda de hacerlo durante los desplazamientos o mientras realizo otras
+            actividades.</paragraph>
+        </item>
+        <item>
+          <title>Cine y series</title>
+          <subtitle>Audiovisual</subtitle>
+          <paragraph>En el ámbito audiovisual tengo especial interés por la ciencia ficción y el
+            misterio.</paragraph>
+          <paragraph>Me gustan especialmente las historias que plantean dilemas relacionados con la
+            tecnología, la sociedad y el futuro, así como aquellas que permiten interpretar
+            diferentes puntos de vista.</paragraph>
+        </item>
+        <item>
+          <title>Naturaleza y rutas</title>
+          <subtitle>Actividades al aire libre</subtitle>
+          <paragraph>Disfruto pasando tiempo al aire libre y recorriendo espacios naturales. La
+            costa asturiana y el entorno del mar Cantábrico forman parte de mis lugares habituales
+            de desconexión.</paragraph>
+          <paragraph>También tengo un vínculo especial con diferentes zonas rurales de León, donde
+            disfruto de la vida fuera de la ciudad.</paragraph>
+        </item>
+      </section>
+    </leisure>
+  </pages>
+  <footer>
+    <description>Sitio web personal y académico desarrollado para la asignatura Estándares y
+      Computación Web (ECW) del Máster Universitario en Ingeniería Web (Universidad de Oviedo).</description>
+    <year>2026</year>
+  </footer>
+</personalWeb>

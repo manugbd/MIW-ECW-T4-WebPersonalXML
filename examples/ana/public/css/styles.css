@@ -1,0 +1,10 @@
+/* Hoja de estilos principal con cascada logica modular */
+@import "colores.css";
+@import "base.css";
+@import "header.css";
+@import "footer.css";
+@import "inicio.css";
+@import "perfil.css";
+@import "proyectos.css";
+@import "intereses.css";
+@import "multimedia.css";

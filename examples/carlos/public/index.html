@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Una web personal sencilla para compartir formación, proyectos y aficiones.">
+        <title>Inicio | Carlos Martín · Aprendiendo desarrollo web</title>
+        <link rel="icon" href="./favicon.ico">
+        <link rel="stylesheet" href="./css/colores.css">
+        <link rel="stylesheet" href="./css/base.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/inicio.css">
+    </head>
+
+    <body>
+        <a href="#contenido-principal">Saltar al contenido principal</a>
+
+        <header>
+            <nav aria-label="Identidad del sitio"><a
+                    href="./index.html"><span>Carlos Martín</span><span>Aprendiendo desarrollo web</span></a></nav>
+            <nav aria-label="Navegación principal">
+                <ul><li>
+      <a href="./index.html" aria-current="page">
+        Inicio
+      </a>
+    </li>
+<li>
+      <a href="./perfil/index.html">
+        Perfil
+      </a>
+    </li>
+<li>
+      <a href="./proyectos/index.html">
+        Proyectos
+      </a>
+    </li>
+<li>
+      <a href="./intereses-profesionales/index.html">
+        Intereses
+      </a>
+    </li>
+<li>
+      <a href="./ocio/index.html">
+        Ocio
+      </a>
+    </li></ul>
+            </nav>
+        </header>
+
+        <main id="contenido-principal">
+            <nav aria-label="Migas de pan">
+                <ol>
+                    <li><span aria-current="page">Inicio</span></li>
+                </ol>
+            </nav>
+            <section>
+      
+      <header>
+        <h1>Carlos Martín</h1>
+        <p>Estudiante de desarrollo de aplicaciones web</p>
+        <p>Estoy aprendiendo a construir páginas accesibles y fáciles de utilizar. Comparto mis pequeños proyectos mientras continúo formándome.</p>
+        <dl>
+      <dt>Nombre</dt><dd>Carlos Martín</dd>
+      <dt>Ubicación</dt>
+           <dd>Gijón, Asturias, España</dd>
+
+    </dl>
+        <ul><li><a href="mailto:carlos@example.com">carlos@example.com</a></li></ul>
+      </header>
+      
+    </section>
+            <section><header><h2>Apartados principales</h2></header>
+              <ul><li>
+      <article>
+        <h3><a href="./perfil/index.html">Perfil</a></h3>
+        <p>Mis primeros pasos en el desarrollo web.</p>
+      </article>
+    </li>
+<li>
+      <article>
+        <h3><a href="./proyectos/index.html">Proyectos</a></h3>
+        <p>Pequeños trabajos con los que practico lo aprendido.</p>
+      </article>
+    </li>
+<li>
+      <article>
+        <h3><a href="./intereses-profesionales/index.html">Intereses</a></h3>
+        <p>Tecnologías y prácticas que quiero conocer mejor.</p>
+      </article>
+    </li>
+<li>
+      <article>
+        <h3><a href="./ocio/index.html">Ocio</a></h3>
+        <p>Mis aficiones fuera de los estudios.</p>
+      </article>
+    </li></ul></section>
+            
+        </main>
+
+        <footer>
+            <section>
+                <h2>Carlos Martín</h2>
+                <p>Sitio personal de aprendizaje. Perfil ficticio de ejemplo, sin imágenes.</p>
+            </section>
+
+            <section aria-labelledby="titulo-contacto">
+                <h2 id="titulo-contacto">Contacto y redes</h2>
+                <address><p>Gijón, Asturias, España</p><ul><li><a href="mailto:carlos@example.com">carlos@example.com</a></li></ul></address>
+            </section>
+
+            <nav aria-labelledby="titulo-mapa">
+                <h2 id="titulo-mapa">Mapa del sitio</h2>
+                <ul><li>
+      <a href="./index.html">Inicio</a>
+    </li>
+<li>
+      <a href="./perfil/index.html">Perfil</a>
+    </li>
+<li>
+      <a href="./proyectos/index.html">Proyectos</a>
+    </li>
+<li>
+      <a href="./intereses-profesionales/index.html">Intereses</a>
+    </li>
+<li>
+      <a href="./ocio/index.html">Ocio</a>
+    </li></ul>
+            </nav>
+            
+            <p>&copy; <time datetime="2026">2026</time> Carlos Martín.</p>
+        </footer>
+        
+        <script src="./js/main.js" defer></script>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>

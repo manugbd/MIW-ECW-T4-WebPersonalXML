@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Genera una web personal completa desde un XML validado">
+        <title>PersonalWebML · Generador XML</title>
+        <link rel="icon" href="assets/favicon.ico">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <header>
+            <p>ECW · Trabajo IV</p>
+            <h1>Tu web empieza en un XML</h1>
+            <p>PersonalWebML transforma tus datos en cinco páginas listas para usar.</p>
+        </header>
+
+        <main>
+            <section aria-labelledby="preparar">
+                <h2 id="preparar">1. Prepara tus datos</h2>
+                <p>
+                    Descarga el esquema y un ejemplo. Edita la identidad, el contacto y las secciones: puedes repetir
+                    artículos, párrafos, listas y enlaces.
+                </p>
+                <p>
+                    <a href="schema/personalWeb.xsd" download>Descargar XML Schema (.xsd)</a>
+                </p>
+                <ul>
+                    <li>
+                        <a href="data/manuel.xml" download>XML de Manuel</a>
+                        — <a href="/examples/manuel/public/">Ver ejemplo</a>
+                    </li>
+                    <li>
+                        <a href="data/ana.xml" download>XML de Ana</a>
+                        — <a href="/examples/ana/public/">Ver ejemplo</a>
+                    </li>
+                    <li>
+                        <a href="data/carlos.xml" download>XML de Carlos</a>
+                        — <a href="/examples/carlos/public/">Ver ejemplo</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="generar">
+                <h2 id="generar">2. Genera y descarga</h2>
+                <form>
+                    <label for="xmlFile">Archivo XML</label>
+                    <input type="file" id="xmlFile" accept=".xml,application/xml,text/xml" required>
+                    <p>
+                        Máximo 2 MB. El archivo se procesa en tu navegador. Abre esta aplicación con Live Server o cualquier
+                        servidor estático.
+                    </p>
+                    <button type="submit" id="generateButton" disabled>Generar y descargar ZIP</button>
+                </form>
+                <p id="status" role="status" aria-live="polite">Selecciona un XML para comenzar.</p>
+            </section>
+
+            <section aria-labelledby="entrega">
+                <h2 id="entrega">3. Completa las imágenes</h2>
+                <p>
+                    El ZIP incluye las cinco páginas HTML, todos los CSS y JS originales, el favicon y la carpeta
+                    <code>img/</code> vacía. Copia ahí las imágenes con los nombres escritos en tu XML.
+                </p>
+                <p>
+                    Extrae el ZIP y abre <code>public/index.html</code>. También puedes publicar la carpeta
+                    <code>public</code> en un servidor estático.
+                </p>
+                <p>
+                    <a href="README.md">Documentación del lenguaje y del proyecto</a>
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                MIW - ECW - T4 - Generación de la Web Personal mediante XML - Manuel García Baldó (UO295497) -- JavaScript ·
+                TypeScript · C++ / WebAssembly
+            </p>
+        </footer>
+
+        <script type="module" src="js/generator.js"></script>
+    </body>
+
+</html>

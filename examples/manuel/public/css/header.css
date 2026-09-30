@@ -1,0 +1,99 @@
+/* Cabecera del sitio y navegacion */
+body > header {
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border-light);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md) var(--space-xl);
+}
+
+/* Identidad y logotipo */
+header > nav:first-of-type {
+  display: flex;
+  align-items: center;
+}
+
+header > nav:first-of-type a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+header > nav:first-of-type a span:first-of-type {
+  font-size: var(--font-size-lg);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--color-primary);
+}
+
+header > nav:first-of-type a span:last-of-type {
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-subtle);
+  font-weight: 600;
+}
+
+/* Menu de navegacion principal */
+header > nav:last-of-type {
+  display: flex;
+}
+
+header > nav:last-of-type ul {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
+header > nav:last-of-type a {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  color: var(--color-text-muted);
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+header > nav:last-of-type a:hover {
+  background-color: var(--color-surface-raised);
+  color: var(--color-primary);
+}
+
+header > nav:last-of-type a[aria-current="page"] {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* Adaptacion para tabletas */
+@media (max-width: 900px) {
+  body > header {
+    flex-direction: column;
+    gap: var(--space-md);
+    padding: var(--space-md);
+  }
+
+  header > nav:last-of-type ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Adaptacion para telefonos moviles */
+@media (max-width: 640px) {
+  header > nav:last-of-type ul {
+    gap: var(--space-2xs);
+  }
+
+  header > nav:last-of-type a {
+    padding: var(--space-2xs) var(--space-xs);
+    font-size: var(--font-size-xs);
+  }
+}

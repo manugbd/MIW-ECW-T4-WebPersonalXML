@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="{{language}}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{siteDescription}}">
+    <title>{{pageTitle}} | {{name}} · {{siteTitle}}</title>
+    <link rel="icon" href="{{prefix}}favicon.ico">
+    <link rel="stylesheet" href="{{prefix}}css/colores.css">
+    <link rel="stylesheet" href="{{prefix}}css/base.css">
+    <link rel="stylesheet" href="{{prefix}}css/header.css">
+    <link rel="stylesheet" href="{{prefix}}css/footer.css">
+    <link rel="stylesheet" href="{{prefix}}css/intereses.css">
+</head>
+
+<body>
+    <a href="#contenido-principal">Saltar al contenido principal</a>
+
+    <header>
+        <nav aria-label="Identidad del sitio"><a
+                href="{{prefix}}index.html"><span>{{name}}</span><span>{{siteTitle}}</span></a></nav>
+        <nav aria-label="Navegación principal">
+            <ul>{{navigation}}</ul>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
+
+        <nav aria-label="Migas de pan">
+            <ol>
+                <li><a href="{{prefix}}index.html">{{homeLabel}}</a></li>
+                <li><span aria-current="page">{{pageLabel}}</span></li>
+            </ol>
+        </nav>
+
+        <header>
+            <h1>{{pageTitle}}</h1>{{pageDescription}}
+        </header>
+
+        {{summary}}
+        {{cards}}
+        {{sections}}
+    </main>
+    
+    <footer>
+        <section>
+            <h2>{{name}}</h2>
+            <p>{{footerDescription}}</p>
+        </section>
+
+        <section aria-labelledby="titulo-contacto">
+            <h2 id="titulo-contacto">Contacto y redes</h2>
+            <address>{{location}}{{contacts}}</address>
+        </section>
+
+        <nav aria-labelledby="titulo-mapa">
+            <h2 id="titulo-mapa">Mapa del sitio</h2>
+            <ul>{{footerNavigation}}</ul>
+        </nav>
+
+        <p>&copy; <time datetime="{{year}}">{{year}}</time> {{name}}.</p>
+    </footer>
+    
+    <script src="{{prefix}}js/main.js" defer></script>
+</body>
+
+</html>

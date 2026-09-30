@@ -1,0 +1,188 @@
+/* base.css */
+
+/* Reseteo general y configuracion base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+  background-color: var(--color-bg);
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-main);
+  background-color: var(--color-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Enlace de salto accesible para navegacion por teclado */
+body > a:first-of-type {
+  position: absolute;
+  top: -999px;
+  left: var(--space-md);
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  text-decoration: none;
+  z-index: 1000;
+  transition: top var(--transition-fast);
+}
+
+body > a:first-of-type:focus {
+  top: var(--space-md);
+  outline: 3px solid var(--color-accent);
+}
+
+/* Foco visible estandarizado para accesibilidad */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+video:focus-visible,
+audio:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* Tipografia y encabezados */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text-main);
+  line-height: var(--line-height-tight);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-sm);
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-sm);
+}
+
+h3 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-xs);
+}
+
+h4 {
+  font-size: var(--font-size-md);
+  margin-bottom: var(--space-xs);
+}
+
+p {
+  margin-bottom: var(--space-md);
+  color: var(--color-text-muted);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Estructura del contenido principal */
+main {
+  flex: 1 0 auto;
+  max-width: var(--container-max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+}
+
+/* Migas de pan */
+main > nav:first-of-type {
+  margin-bottom: var(--space-xl);
+  padding: var(--space-xs) 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+main > nav:first-of-type ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-subtle);
+}
+
+main > nav:first-of-type li {
+  display: flex;
+  align-items: center;
+}
+
+main > nav:first-of-type li:not(:last-child)::after {
+  content: "/";
+  margin-left: var(--space-xs);
+  color: var(--color-border);
+  font-weight: 400;
+}
+
+main > nav:first-of-type a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+main > nav:first-of-type a:hover {
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+
+main > nav:first-of-type [aria-current="page"] {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* Cabecera compartida en paginas interiores */
+main > header:first-of-type {
+  margin-bottom: var(--space-2xl);
+  border-bottom: 2px solid var(--color-border-light);
+  padding-bottom: var(--space-md);
+}
+
+main > header:first-of-type h1 {
+  margin-bottom: var(--space-xs);
+}
+
+main > header:first-of-type p {
+  font-size: var(--font-size-md);
+  color: var(--color-text-subtle);
+  margin-bottom: 0;
+}
+
+/* Adaptacion para pantallas reducidas */
+@media (max-width: 640px) {
+  main {
+    padding: var(--space-md);
+  }
+}

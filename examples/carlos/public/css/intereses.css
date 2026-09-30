@@ -1,0 +1,114 @@
+/* intereses.css */
+
+/* Grilla principal de contenidos */
+
+main>section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-xl);
+  margin-bottom: var(--space-2xl);
+}
+
+/* Tarjetas de contenido */
+
+main>section>article {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Encabezado de cada tarjeta */
+
+main>section>article>header {
+  margin-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-border-light);
+  padding-bottom: var(--space-xs);
+}
+
+main>section>article>header h2 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-2xs);
+}
+
+main>section>article>header p {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0;
+}
+
+/* Texto de los contenidos */
+
+main>section>article>p {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+}
+
+/* Elementos multimedia */
+
+main>section>article>figure {
+  margin-top: var(--space-md);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main>section>article figure video {
+  width: 100%;
+  max-width: 640px;
+  border-radius: var(--radius-md);
+  background-color: rgb(0, 0, 0);
+}
+
+main>section>article figure audio {
+  width: 100%;
+  max-width: 600px;
+}
+
+main>section>article figure figcaption {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-subtle);
+  margin-top: var(--space-sm);
+  text-align: center;
+}
+
+
+/* Tarjetas que contienen recursos multimedia */
+
+main>section>article:has(video),
+main>section>article:has(audio) {
+  grid-column: span 2;
+}
+
+/* Adaptación para pantallas pequeñas */
+
+@media (max-width: 800px) {
+
+  main>section>article:has(video),
+  main>section>article:has(audio) {
+    grid-column: auto;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  main>section {
+    grid-template-columns: 1fr;
+  }
+
+  main>section>article {
+    padding: var(--space-lg);
+  }
+
+}
