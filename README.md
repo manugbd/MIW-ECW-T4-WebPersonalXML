@@ -14,22 +14,22 @@ Aplicación estática para generar un sitio web personal completo desde XML.
 
 ## Archivos
 
-- `index.html` y `css/styles.css`: interfaz; HTML semántico y CSS por cascada, sin clases ni estilos inline.
+- `index.html` y `css/styles.css`: interfaz - HTML semántico y CSS.
 - `schema/personalWeb.xsd`: definición oficial del lenguaje.
-- `data/manuel.xml`: contenido de la web original de T2, adaptado al modelo; se omiten los artículos de audio/vídeo y el enlace a PDF.
+- `data/manuel.xml`: contenido de la web original de T2, adaptado al modelo. Se omiten los artículos de audio/vídeo y el enlace a PDF.
 - `data/ana.xml`: ejemplo medio con dos imágenes: `foto-perfil.png` y `logo-uniovi.png`.
 - `data/carlos.xml`: ejemplo sencillo sin imágenes.
 - `assets/templates/`: cinco plantillas HTML con marcadores.
 - `assets/css/`, `assets/js/` y `assets/favicon.ico`: recursos originales de `public` de T2, copiados sin modificaciones.
 - `assets/manifest.json`: lista de recursos que se añaden al ZIP.
 - `src/validator.ts` y `src/site.ts`: TypeScript original.
-- `js/validator.js` y `js/site.js`: versiones JavaScript sincronizadas con el TypeScript; el navegador ejecuta estos archivos.
+- `js/validator.js` y `js/site.js`: versiones JavaScript sincronizadas con el TypeScript.
 - `js/generator.js`: selección de archivo, carga de recursos, coordinación y descarga.
 - `js/templates.js`: intercambio de texto UTF-8 con WebAssembly.
-- `js/zip.js` y `js/jszip.min.js`: generación del ZIP con JSZip 3.10.1, guardado localmente (aproximadamente 98 KB). Se conserva su aviso de licencia.
-- `wasm/templates.cpp`: procesamiento de los marcadores `{{nombre}}`; devuelve el HTML final.
+- `js/zip.js` y `js/jszip.min.js`: generación del ZIP con JSZip 3.10.1, guardado localmente. Se conserva su aviso de licencia.
+- `wasm/templates.cpp`: procesamiento de los marcadores `{{nombre}}`. Devuelve el HTML final.
 - `wasm/compilar.ps1`: genera `wasm/templates.wasm` con un compilador Zig disponible.
-- `examples/manuel/` y `examples/ana/`: salidas de una generación anterior; no se han actualizado en este cambio.
+- `examples/manuel/` y `examples/ana/`: salidas de ejemplo.
 
 ## Lenguaje XML
 
@@ -78,11 +78,3 @@ Con Zig disponible, ejecuta desde la carpeta del proyecto:
 ```powershell
 .\wasm\compilar.ps1 -Zig "C:\ruta\a\zig.exe"
 ```
-
-El script compila `templates.cpp` y coloca `templates.wasm` en la carpeta que carga JavaScript. Hasta hacerlo, el generador mostrará que falta compilar WebAssembly.
-
-Los archivos JavaScript están sincronizados con TypeScript para utilizarlos sin Node. Si posteriormente modificas los `.ts`, actualiza su JavaScript o usa un compilador TypeScript disponible con `tsc -p tsconfig.json`.
-
-C++ realiza la sustitución en dos pasadas: calcula el tamaño necesario y escribe el HTML. Detecta marcadores sin valor y dispone de 8 MB de memoria de trabajo reutilizable. Los textos ya llegan escapados desde TypeScript; los fragmentos HTML preparados se insertan directamente.
-
-JSZip es una biblioteca local, no un framework ni un servidor. La aplicación se sirve como archivos estáticos.

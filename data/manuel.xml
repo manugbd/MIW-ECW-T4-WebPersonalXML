@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<personalWeb xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schema/personalWeb.xsd">
+<personalWeb xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../schema/personalWeb.xsd">
   <site>
     <title>Web personal</title>
     <description>Página web personal y académica de Manuel García Baldó. Graduado en Ingeniería
@@ -34,12 +35,14 @@
   <pages>
     <home>
       <title>Inicio</title>
-      <label>Inicio</label><description>Graduado en Ingeniería Informática del Software | Estudiante del Máster
+      <label>Inicio</label>
+      <description>Graduado en Ingeniería Informática del Software | Estudiante del Máster
         Universitario en Ingeniería Web</description>
     </home>
     <profile>
       <title>Mi perfil profesional y Currículum Vitae</title>
-      <label>Mi perfil</label><description>Información académica, trayectoria profesional y competencias técnicas en el
+      <label>Mi perfil</label>
+      <description>Información académica, trayectoria profesional y competencias técnicas en el
         ámbito del software y la ingeniería web.</description>
       <section>
         <title>Formación Académica</title>
@@ -128,7 +131,8 @@
     </profile>
     <projects>
       <title>Proyectos y Portfolio</title>
-      <label>Proyectos</label><description>Selección de proyectos de desarrollo de software y despliegue de
+      <label>Proyectos</label>
+      <description>Selección de proyectos de desarrollo de software y despliegue de
         infraestructuras.</description>
       <section>
         <title>Proyectos destacados</title>
@@ -205,7 +209,8 @@
     </projects>
     <interests>
       <title>Tecnología y estudios</title>
-      <label>Intereses</label><description>Áreas de la informática y la tecnología que despiertan especialmente mi interés
+      <label>Intereses</label>
+      <description>Áreas de la informática y la tecnología que despiertan especialmente mi interés
         durante mi formación y desarrollo profesional.</description>
       <section>
         <title>Áreas de interés</title>
@@ -251,7 +256,8 @@
     </interests>
     <leisure>
       <title>Ocio y tiempo libre</title>
-      <label>Ocio</label><description>Aficiones y actividades que forman parte de mi tiempo libre y me permiten
+      <label>Ocio</label>
+      <description>Aficiones y actividades que forman parte de mi tiempo libre y me permiten
         desconectar de la actividad académica y profesional.</description>
       <section>
         <title>Aficiones</title>

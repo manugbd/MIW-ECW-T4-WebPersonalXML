@@ -9,7 +9,9 @@
   <person>
     <name>Ana López</name>
     <headline>Diseñadora de producto digital y estudiante de Ingeniería Web</headline>
-    <biography>Diseño interfaces claras y accesibles. Combino investigación con usuarios, prototipado y desarrollo de pequeñas aplicaciones para convertir necesidades reales en soluciones útiles.</biography>
+    <biography>Diseño interfaces claras y accesibles. Combino investigación con usuarios,
+      prototipado y desarrollo de pequeñas aplicaciones para convertir necesidades reales en
+      soluciones útiles.</biography>
     <location>Oviedo, Asturias, España</location>
     <birthYear>1998</birthYear>
     <image>
@@ -44,14 +46,16 @@
             <filename>logo-uniovi.png</filename>
             <alt>Logotipo de la Universidad de Oviedo</alt>
           </image>
-          <paragraph>Actualmente amplío mis conocimientos de desarrollo web para participar en todas las fases de creación de un producto.</paragraph>
+          <paragraph>Actualmente amplío mis conocimientos de desarrollo web para participar en todas
+            las fases de creación de un producto.</paragraph>
           <bullet>Estándares web y accesibilidad</bullet>
           <bullet>Diseño y desarrollo de aplicaciones</bullet>
         </item>
         <item>
           <title>Formación en diseño de producto digital</title>
           <subtitle>Programa de especialización · 2020–2021</subtitle>
-          <paragraph>Investigación con usuarios, diseño de interfaces, prototipado y evaluación de la usabilidad.</paragraph>
+          <paragraph>Investigación con usuarios, diseño de interfaces, prototipado y evaluación de
+            la usabilidad.</paragraph>
         </item>
       </section>
       <section>
@@ -59,14 +63,16 @@
         <item>
           <title>Diseñadora independiente</title>
           <subtitle>Proyectos para pequeños negocios · 2023–actualidad</subtitle>
-          <paragraph>Diseño sitios web y experiencias de compra adaptadas a las necesidades de cada negocio.</paragraph>
+          <paragraph>Diseño sitios web y experiencias de compra adaptadas a las necesidades de cada
+            negocio.</paragraph>
           <bullet>Entrevistas con clientes y definición de requisitos</bullet>
           <bullet>Prototipos interactivos y sistemas de diseño</bullet>
           <bullet>Revisión de accesibilidad y adaptación a móviles</bullet>
         </item>
         <item>
           <title>Colaboración con un estudio creativo</title>
-          <paragraph>Participé en el rediseño de páginas corporativas y en la preparación de componentes reutilizables para el equipo de desarrollo.</paragraph>
+          <paragraph>Participé en el rediseño de páginas corporativas y en la preparación de
+            componentes reutilizables para el equipo de desarrollo.</paragraph>
         </item>
       </section>
       <section>
@@ -84,8 +90,10 @@
         <item>
           <title>Rediseño de una biblioteca digital</title>
           <subtitle>Proyecto académico de experiencia de usuario</subtitle>
-          <paragraph>Propuesta para simplificar la búsqueda de libros y el seguimiento de préstamos desde el móvil.</paragraph>
-          <paragraph>El diseño prioriza la legibilidad, la navegación por teclado y mensajes comprensibles.</paragraph>
+          <paragraph>Propuesta para simplificar la búsqueda de libros y el seguimiento de préstamos
+            desde el móvil.</paragraph>
+          <paragraph>El diseño prioriza la legibilidad, la navegación por teclado y mensajes
+            comprensibles.</paragraph>
           <bullet>Investigación con usuarios</bullet>
           <bullet>Prototipado de interfaces</bullet>
           <bullet>Evaluación de accesibilidad</bullet>
@@ -97,7 +105,8 @@
             <title>Partes del proyecto</title>
             <item>
               <title>Catálogo y búsqueda</title>
-              <paragraph>Filtros por tema, autor y disponibilidad para localizar lecturas con rapidez.</paragraph>
+              <paragraph>Filtros por tema, autor y disponibilidad para localizar lecturas con
+                rapidez.</paragraph>
             </item>
             <item>
               <title>Área personal</title>
@@ -107,7 +116,8 @@
         </item>
         <item>
           <title>Agenda para un taller de cerámica</title>
-          <paragraph>Una página sencilla para consultar horarios, conocer las actividades y solicitar información.</paragraph>
+          <paragraph>Una página sencilla para consultar horarios, conocer las actividades y
+            solicitar información.</paragraph>
           <bullet>HTML semántico</bullet>
           <bullet>CSS adaptable</bullet>
           <bullet>JavaScript</bullet>
@@ -123,11 +133,13 @@
         <item>
           <title>Accesibilidad digital</title>
           <subtitle>Interfaces para más personas</subtitle>
-          <paragraph>Me interesa diseñar productos que se puedan usar con distintas capacidades, dispositivos y formas de interacción.</paragraph>
+          <paragraph>Me interesa diseñar productos que se puedan usar con distintas capacidades,
+            dispositivos y formas de interacción.</paragraph>
         </item>
         <item>
           <title>Sistemas de diseño</title>
-          <paragraph>Disfruto creando componentes y criterios visuales compartidos que mantengan la coherencia de una aplicación.</paragraph>
+          <paragraph>Disfruto creando componentes y criterios visuales compartidos que mantengan la
+            coherencia de una aplicación.</paragraph>
           <bullet>Tipografía y color</bullet>
           <bullet>Patrones de interacción</bullet>
         </item>
@@ -141,12 +153,14 @@
         <title>Aficiones</title>
         <item>
           <title>Fotografía urbana</title>
-          <paragraph>Me gusta recorrer la ciudad y fotografiar detalles de su arquitectura, sus colores y la vida cotidiana.</paragraph>
+          <paragraph>Me gusta recorrer la ciudad y fotografiar detalles de su arquitectura, sus
+            colores y la vida cotidiana.</paragraph>
         </item>
         <item>
           <title>Naturaleza y rutas</title>
           <subtitle>Escapadas por Asturias</subtitle>
-          <paragraph>Los fines de semana suelo hacer rutas cortas y descubrir pueblos y paisajes de la costa.</paragraph>
+          <paragraph>Los fines de semana suelo hacer rutas cortas y descubrir pueblos y paisajes de
+            la costa.</paragraph>
           <bullet>Senderismo</bullet>
           <bullet>Paseos junto al mar</bullet>
         </item>

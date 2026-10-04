@@ -79,7 +79,7 @@
       <h3>Carburo — Gestión Inteligente de Combustible</h3>
       <p>Trabajo de Fin de Grado (TFG) &amp; Ecosistema Móvil y Web</p>
     </header>
-    <section>
+    <section> <h4>Descripción</h4>
     <p>Carburo es una plataforma integral orientada a optimizar el gasto de
             combustible de los usuarios, proporcionando información en tiempo real sobre estaciones
             de servicio, fluctuación de precios y registro detallado de consumos y repostajes.</p>
@@ -147,7 +147,7 @@
       <h3>Infraestructura Web Segura y Automatizada</h3>
       <p>Proyecto de Máster Universitario en Ingeniería Web</p>
     </header>
-    <section>
+    <section> <h4>Descripción</h4>
     <p>Desarrollo de un entorno integral de infraestructura como código (IaC) para el
             despliegue orquestado y seguro de aplicaciones web en entornos virtualizados y cloud. El
             sistema implementa aprovisionamiento automatizado, configuración de redes aisladas,
@@ -168,7 +168,7 @@
       <h3>Sitio Web Personal y Académico (ECW)</h3>
       <p>Estándares y Computación Web</p>
     </header>
-    <section>
+    <section> <h4>Descripción</h4>
     <p>El presente sitio web, concebido bajo los más rigurosos principios de la
             asignatura Estándares y Computación Web. Desarrollado mediante el generador estático
             Eleventy y plantillas Nunjucks, garantiza una separación estricta de responsabilidades,
@@ -228,44 +228,6 @@
     </footer>
     
     <script src="../js/main.js" defer></script>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
 </body>
 
 </html>

@@ -118,7 +118,7 @@ function item(element, prefix, level, identity, project = false) {
       <h${heading}>${text(element, "title")}</h${heading}>
       ${paragraph(value(element, "subtitle"))}
     </header>
-    ${project ? "<section>" : ""}
+    ${project ? `<section> <h${Math.min(heading + 1, 6)}>Descripción</h${Math.min(heading + 1, 6)}>` : ""}
     ${paragraphs}
     ${bullets ? `<ul>${bullets}</ul>` : ""}
     ${links(element)}
